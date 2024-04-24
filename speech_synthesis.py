@@ -14,8 +14,8 @@ speech_config.endpoint_id = "51e82c31-a705-4ac4-9f11-23c1c20ade3d"
 speech_config.speech_synthesis_voice_name = "MichelleSandfordNeural"
 speech_config.set_speech_synthesis_output_format(speechsdk.SpeechSynthesisOutputFormat.Audio24Khz160KBitRateMonoMp3)
 
-text = "Hi, this is an adventure. Let's go!"
-file_name = "sample1.wav"
+text = "Hi, this is Michelle at Microsoft! Or is it?"
+file_name = "sample2.wav"
 
 # using the default speaker as audio output.
 file_config = speechsdk.audio.AudioOutputConfig(filename=file_name)
