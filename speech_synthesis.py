@@ -1,4 +1,4 @@
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 import azure.cognitiveservices.speech as speechsdk
 
