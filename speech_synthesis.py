@@ -1,9 +1,10 @@
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
+import azure.cognitiveservices.speech as speechsdk
 import os
 import azure.cognitiveservices.speech as speechsdk
 
 #Load the environment variables
-load_dotenv()
+#load_dotenv()
 
 # Creates an instance of a speech config with specified subscription key and service region.
 speech_key = os.getenv("SPEECH_KEY")
