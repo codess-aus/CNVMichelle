@@ -15,8 +15,13 @@ speech_config.endpoint_id = endpoint_id
 speech_config.speech_synthesis_voice_name = "MichelleSandfordNeural"
 speech_config.set_speech_synthesis_output_format(speechsdk.SpeechSynthesisOutputFormat.Audio24Khz160KBitRateMonoMp3)
 
+<<<<<<< Updated upstream
 text = "Hi, this is Michelle at Microsoft! Great to be here in Sweden"
 file_name = "sample4.wav"
+=======
+text = "Hello"
+file_name = "sample8.wav"
+>>>>>>> Stashed changes
 
 # using the default speaker as audio output.
 file_config = speechsdk.audio.AudioOutputConfig(filename=file_name)
