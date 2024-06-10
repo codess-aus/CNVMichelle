@@ -1,21 +1,18 @@
-from dotenv import load_dotenv
 import os
 import azure.cognitiveservices.speech as speechsdk
-
-#Load the environment variables
-load_dotenv()
 
 # Creates an instance of a speech config with specified subscription key and service region.
 speech_key = os.getenv("SPEECH_KEY")
 service_region = os.getenv("SERVICE_REGION")
+endpoint_id = os.getenv("ENDPOINT_ID")
 
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
-speech_config.endpoint_id = "51e82c31-a705-4ac4-9f11-23c1c20ade3d"
+speech_config.endpoint_id = endpoint_id
 speech_config.speech_synthesis_voice_name = "MichelleSandfordNeural"
 speech_config.set_speech_synthesis_output_format(speechsdk.SpeechSynthesisOutputFormat.Audio24Khz160KBitRateMonoMp3)
 
-text = "Hi, this is Michelle at Microsoft! Or is it?"
-file_name = "sample2.wav"
+text = "Hi, my name is Michelle Sandford and I am the Developer Engagement Lead at Microsoft in Asia. Well actually, I am an AI clone of Michelles voice reading out loud what she has told me to say'. I was created using Azure Speech Services Custom Neural Voice"
+file_name = "hello.wav"
 
 # using the default speaker as audio output.
 file_config = speechsdk.audio.AudioOutputConfig(filename=file_name)
