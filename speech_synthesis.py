@@ -13,8 +13,8 @@ speech_config.set_speech_synthesis_output_format(
     speechsdk.SpeechSynthesisOutputFormat.Audio24Khz160KBitRateMonoMp3
 )
 
-text = "Hi, my name is Michelle Sandford and I am the Developer Engagement Lead at Microsoft in Asia. Well actually, I am an AI clone of Michelles voice reading out loud what she has told me to say'. I was created using Azure Speech Services Custom Neural Voice"
-file_name = "hello.wav"
+text = "The Adelaide Azure Group is the best group I have ever presented to'. I was created using Azure Speech Services Custom Neural Voice"
+file_name = "AUG.wav"
 
 # Using the default speaker as audio output.
 file_config = speechsdk.audio.AudioOutputConfig(filename=file_name)
